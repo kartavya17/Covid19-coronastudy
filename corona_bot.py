@@ -15,7 +15,7 @@ SHORT_HEADERS = ['Sno', 'State','In','Fr','Cd','Dt']
 FILE_NAME = 'corona_india_data.json'
 extract_contents = lambda row: [x.text.replace('\n', '') for x in row]
 
-
+#define function
 def save(x):
     with open(FILE_NAME, 'w') as f:
         json.dump(x, f)
